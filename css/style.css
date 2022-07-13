@@ -1,0 +1,85 @@
+html {
+    background-color: lavender;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: white;
+    width: 60%;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+div {
+    margin-bottom: 30px;
+}
+.container {
+    position: relative;
+    min-height: 100px;
+}
+#box1 {
+    position: absolute;
+    transition: 0.5s ease-in;
+    left: 0;
+}
+.active {
+    /*left: 87% !important;*/
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+}
+.arrow {
+    margin: 0 auto;
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+}
+.arrow div {
+    border: 1px solid grey;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    box-shadow: 0 0 10px 0 grey;
+}
+#left {
+    margin-right: 20px;
+    cursor: pointer;
+}
+#left:hover {
+    background-color: gainsboro;
+}
+.ul-container {
+    position: relative;
+}
+.ul-list {
+    list-style-type: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+.ul-list .li-fade-now {
+    display: none;
+}
+.ul-active .show-more {
+    display: block;
+}
+.ul-active .hide {
+    display: block;
+}
+.ul-list .ul-sublist + .li-fade-now, .ul-list .ul-sublist + .hide {
+    display: block;
+}
+.ul-sublist {
+    display: none !important;
+}
+.display-none {
+    display: none !important;
+}
+.display-block {
+    display: block;
+}
